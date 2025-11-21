@@ -1,0 +1,27 @@
+sections:
+  - id: "health_specific"
+    title: "Специфика здравоохранения"
+    questions:
+      - id: "egisz_integration"
+        text: "Имеет ли система интеграцию с ЕГИСЗ (Единая государственная информационная система в сфере здравоохранения)?"
+        type: "yes_no"
+        weight: 3.0
+        options:
+          - id: "yes"
+            label: "Да"
+            value: true
+          - id: "no"
+            label: "Нет"
+            value: false
+
+      - id: "medical_devices"
+        text: "Управляет ли система медицинским оборудованием, отказ которого может нанести вред жизни/здоровью пациентов?"
+        type: "yes_no"
+        weight: 10.0
+        options:
+          - id: "yes"
+            label: "Да"
+            value: true
+          - id: "no"
+            label: "Нет"
+            value: false

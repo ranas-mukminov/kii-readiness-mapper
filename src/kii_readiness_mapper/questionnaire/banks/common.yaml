@@ -1,0 +1,51 @@
+sections:
+  - id: "sector_basics"
+    title: "Отраслевая принадлежность и критичность"
+    questions:
+      - id: "sector"
+        text: "В какой сфере преимущественно работает ваша организация?"
+        type: "single_choice"
+        options:
+          - id: "health"
+            label: "Здравоохранение"
+            value: "health"
+          - id: "transport"
+            label: "Транспорт"
+            value: "transport"
+          - id: "energy"
+            label: "Энергетика"
+            value: "energy"
+          - id: "finance"
+            label: "Банковская сфера / финрынок"
+            value: "finance"
+          - id: "not_listed"
+            label: "Другая сфера"
+            value: "other"
+        weight: 5.0
+
+      - id: "service_impact"
+        text: "Приведёт ли остановка данной системы к прекращению оказания критически важной услуги (массово для населения/клиентов)?"
+        type: "yes_no"
+        weight: 10.0
+        options:
+          - id: "yes"
+            label: "Да"
+            value: true
+          - id: "no"
+            label: "Нет"
+            value: false
+
+  - id: "org_measures_basic"
+    title: "Базовые организационные меры"
+    questions:
+      - id: "security_responsible"
+        text: "Назначен ли в организации ответственный за обеспечение информационной безопасности (или структурное подразделение)?"
+        type: "yes_no"
+        weight: 2.0
+        options:
+          - id: "yes"
+            label: "Да"
+            value: true
+          - id: "no"
+            label: "Нет"
+            value: false

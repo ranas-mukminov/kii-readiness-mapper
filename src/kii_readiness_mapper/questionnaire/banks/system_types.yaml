@@ -1,0 +1,15 @@
+sections:
+  - id: "system_type_specific"
+    title: "Тип системы"
+    questions:
+      - id: "internet_access"
+        text: "Имеет ли система доступ в сеть Интернет (прямой или через шлюз)?"
+        type: "yes_no"
+        weight: 5.0
+        options:
+          - id: "yes"
+            label: "Да"
+            value: true
+          - id: "no"
+            label: "Нет"
+            value: false

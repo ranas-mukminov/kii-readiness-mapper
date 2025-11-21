@@ -1,0 +1,24 @@
+name: "Частная клиника 'Здоровье'"
+sector: "health"
+inn: "7700000000"
+systems:
+  - id: "mis_core"
+    name: "Медицинская Информационная Система (МИС)"
+    type: "is"
+    description: "Основная система ведения электронных медкарт"
+    is_critical: true
+    users_count: 50
+    has_external_access: true
+  - id: "website"
+    name: "Сайт клиники"
+    type: "web"
+    description: "Сайт-визитка с формой записи"
+    is_critical: false
+    users_count: 1000
+    has_external_access: true
+org_measures:
+  - id: "security_policy"
+    type: "org"
+    title: "Политика ИБ"
+    description: "Утвержденная политика информационной безопасности"
+    is_implemented: true
