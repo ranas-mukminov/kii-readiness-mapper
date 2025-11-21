@@ -99,8 +99,10 @@ async def submit(request: Request):
     
     # Convert "true"/"false" strings to booleans
     for k, v in answers.items():
-        if v == "true": answers[k] = True
-        elif v == "false": answers[k] = False
+        if v == "true":
+            answers[k] = True
+        elif v == "false":
+            answers[k] = False
             
     engine = ScoringEngine()
     scores = engine.calculate_scores(questionnaire, answers)
